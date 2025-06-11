@@ -2,7 +2,7 @@ const addBtn = document.getElementById('addBtn');
 const progressContainer = document.getElementById('progressContainer');
 
 addBtn.addEventListener('click', () => {
-  // Create progress bar elements
+  
   const barBg = document.createElement('div');
   barBg.className = 'progress-bar-bg';
 
@@ -12,9 +12,9 @@ addBtn.addEventListener('click', () => {
   barBg.appendChild(barFill);
   progressContainer.appendChild(barBg);
 
-  // Animate the progress bar
+  
   let start = null;
-  const duration = 2000; // ms
+  const duration = 2000; 
 
   function animate(timestamp) {
     if (!start) start = timestamp;
